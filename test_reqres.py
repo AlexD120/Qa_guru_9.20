@@ -7,12 +7,12 @@ from utils import load_schema
 BASE_URL = "https://reqres.in/"
 
 def post_reqres(url, **kwargs):
-  base_url = "https://reqres.in/"
+  base_url = "https://reqres.in"
   response = requests.post(base_url + url, kwargs)
   return response
 
 def test_schema_validate_from_file_with_post_reqres():
-  response = post_reqres("api/users", data={"name": "morpheus", "job": "master"})
+  response = post_reqres("/api/users", data={"name": "morpheus", "job": "master"})
   body = response.json()
 
   assert response.status_code == 201
