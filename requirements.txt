@@ -1,0 +1,8 @@
+pytest>=8.0.0
+allure-pytest>=2.13.2
+curlify>=2.2.1
+jsonschema>=4.21.1
+requests>=2.31.0
+selene>=2.0.0rc7
+webdriver-manager>=4.0.1
+
